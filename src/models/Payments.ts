@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const paymentSchema = new mongoose.Schema(
   {
-    user: {
+    userId: {
       // Reference to the user who made the payment
       type: mongoose.Schema.Types.ObjectId,
       ref: "UserModel",
@@ -39,6 +39,6 @@ const paymentSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const paymentModel = mongoose.model("Payments", paymentSchema);
+const paymentsModel = mongoose.model("Payments", paymentSchema);
 
-export default paymentModel;
+export default paymentsModel;

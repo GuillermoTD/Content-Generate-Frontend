@@ -1,17 +1,25 @@
+import { handleFreeSubscription } from "../controllers/stripePaymentController";
 import errorHandlerMiddleware from "../middleware/errorHandlerMiddleware";
 import handleStripePayment from "../middleware/handleStripePayment";
 import isUserAuthenticatedHandler from "../middleware/isUserAuthenticatedHandler";
 import { Router } from "express";
-
 const router = Router();
 
-const stripeRoute = router.post(
+router.post(
   "/checkout",
   isUserAuthenticatedHandler,
   errorHandlerMiddleware,
   handleStripePayment
 );
 
+router.post(
+  "/free-plan",
+  isUserAuthenticatedHandler,
+  // errorHandlerMiddleware,
+  handleFreeSubscription
 
-export default stripeRoute;
+);
+
+
+export default router;
 

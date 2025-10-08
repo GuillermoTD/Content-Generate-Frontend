@@ -1,3 +1,4 @@
+import userDTO from "../dto/userDTO";
 
 /*aqui verificamos si el usuario tiene fecha de proximo cobro 
 y si dicha fecha es hoy, cualquiera que sea verdadero devolvera un true*/

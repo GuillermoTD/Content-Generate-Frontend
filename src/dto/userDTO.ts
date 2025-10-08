@@ -1,4 +1,4 @@
-interface userDTO {
+export default interface userDTO {
   _id: string;
   userName: string;
   email: string;
