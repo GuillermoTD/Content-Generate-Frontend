@@ -12,11 +12,11 @@ const system = createSystem(defaultConfig);// default settings of chakraui
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ChakraProvider value={system}>
+    {/* <ChakraProvider value={system}> */}
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
         <ReactQueryDevtools />
       </QueryClientProvider>
-    </ChakraProvider>
+    {/* </ChakraProvider> */}
   </StrictMode>
 );
