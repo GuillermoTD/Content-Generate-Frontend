@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
 
+*{
 
-/* *{
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
-} */
+  font-family: 'Inter', sans-serif;
+}
 
+:root{
+  --primary-color: #4F46E5;
+  --primary-color-hsl:231, 72%, 60%;
+  --second-color-hsl:hsl(142, 71%, 45%, 0.7);
+  --tooltip-bg: #f8f8f8;
+}
+
+.sidebar-link{
+  @apply text-gray-700 hover:bg-slate-900 hover:text-white transition-colors
+   rounded-lg py-[0.3rem];
+}
+
+.Outlet-Container{
+  @apply px-6 min-h-[90vh] pt-[2rem] overflow-x-hidden;
+}
 
 /* .page-container {
   @apply max-w-6xl mx-auto px-4 min-h-screen;

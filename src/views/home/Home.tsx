@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black ">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -203,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 scroll-smooth">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             {[
