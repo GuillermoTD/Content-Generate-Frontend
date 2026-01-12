@@ -34,19 +34,19 @@ const Sidebar = ({ open, setOpen }: SidebarProps) => {
         </div>
         {/* links */}
         <nav className="flex justify-center flex-col justify-center gap-2 mt-2 p-4">
-          <Link to="/dashboard" className="sidebar-link flex items-center gap-2" href="#">
+          <Link to="/dashboard" className="sidebar-link flex items-center gap-2" >
             <LayoutTemplate size={20} />
             Dashboard
           </Link>
-          <Link to="/generate-content" className="sidebar-link flex items-center gap-2" href="#">
+          <Link to="/generate-content" className="sidebar-link flex items-center gap-2" >
             <FileText size={20} />
             Generate
           </Link>
-          <Link to="/history" className="sidebar-link flex items-center gap-2" href="#">
+          <Link to="/history" className="sidebar-link flex items-center gap-2" >
             <History size={20} />
             History
           </Link>
-          <Link to="/settings" className="sidebar-link flex items-center gap-2" href="#">
+          <Link to="/settings" className="sidebar-link flex items-center gap-2" >
             <Settings size={20} />
             Settings
           </Link>
