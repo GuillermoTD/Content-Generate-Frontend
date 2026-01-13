@@ -9,6 +9,7 @@ import {
 } from "@radix-ui/themes";
 import { FileText, Video, ImageIcon } from "lucide-react";
 import Header from "../../components/Header";
+import { BlogGenerator } from "../../components/generators/BlogGenerator";
 // import { DashboardShell } from "@radix-ui/themes";
 
 const GenerateContent = () => {
@@ -16,7 +17,7 @@ const GenerateContent = () => {
     <Box className="min-h-screen bg-slate-50/50 ">
       <Header />
 
-      <Box className="pt-10 pb-12 px-6 max-w-7xl mx-auto">
+      <Box className="pt-10 pb-12 px-6 mx-auto">
         {/* Encabezado del Dashboard usando Text de Radix */}
         <Box mb="1">
           <Text as="p" size="8" weight="bold" mb="2">
@@ -49,8 +50,7 @@ const GenerateContent = () => {
 
         <Box pt="4">
           <Tabs.Content value="blog" className="px-6">
-            {/* <BlogGenerator /> */}
-            BlogGenerator
+            <BlogGenerator />
           </Tabs.Content>
 
           <Tabs.Content value="video" className="px-6">
