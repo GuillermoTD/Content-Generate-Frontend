@@ -30,8 +30,8 @@ const GenerateContent = () => {
 
      
       <Tabs.Root defaultValue="blog" className="w-full">
-        <Tabs.List className="grid w-full px-6 grid-cols-3 h-auto bg-red-400">
-          <Tabs.Trigger value="blog" className="flex items-center gap-2 py-3 w- flex-1">
+        <Tabs.List size="2" className="grid w-full px-6 grid-cols-3 h-auto">
+          <Tabs.Trigger value="blog" className="flex items-center gap-2 py-3 flex-1 w-full">
             <FileText className="h-4 w-8" />
             <span className="hidden sm:inline">Blog</span>
           </Tabs.Trigger>

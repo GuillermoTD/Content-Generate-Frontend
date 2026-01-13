@@ -1,4 +1,3 @@
-import React from 'react';
 import { Flex, TextField, Box, IconButton, Theme } from '@radix-ui/themes';
 import { Search, Bell } from 'lucide-react';
 import "@radix-ui/themes/styles.css";
