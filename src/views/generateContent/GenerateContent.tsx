@@ -10,6 +10,8 @@ import {
 import { FileText, Video, ImageIcon } from "lucide-react";
 import Header from "../../components/Header";
 import { BlogGenerator } from "../../components/generators/BlogGenerator";
+import {VideoGenerator} from "../../components/generators/VideoGenerator";
+import { ImageGenerator } from "../../components/generators/ImageGenerator";
 // import { DashboardShell } from "@radix-ui/themes";
 
 const GenerateContent = () => {
@@ -54,13 +56,11 @@ const GenerateContent = () => {
           </Tabs.Content>
 
           <Tabs.Content value="video" className="px-6">
-            {/* <VideoGenerator /> */}
-            VideoGenerator
+            <VideoGenerator />
           </Tabs.Content>
 
           <Tabs.Content value="image" className="px-6">
-            {/* <ImageGenerator /> */}
-            ImageGenerator
+            <ImageGenerator />
           </Tabs.Content>
         </Box>
       </Tabs.Root>
