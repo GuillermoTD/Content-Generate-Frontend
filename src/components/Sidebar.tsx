@@ -1,7 +1,6 @@
 import {
   FileText,
   History,
-  Image,
   LayoutTemplate,
   Settings,
 } from "lucide-react";
@@ -9,44 +8,45 @@ import { ProgressBar } from "./pre-built-components/ProgressBar";
 import { Link } from "react-router";
 interface SidebarProps {
   open: Boolean;
-  setOpen: (open: Boolean) => void;
+ 
 }
 
-const routes = [
-  { name: "Dashboard", path: "#", label: "Dashboard" },
-  { name: "Generate", path: "#", label: "Generate" },
-];
+// const routes = [
+//   { name: "Dashboard", path: "#", label: "Dashboard" },
+//   { name: "Generate", path: "#", label: "Generate" },
+// ];
 
-const Sidebar = ({ open, setOpen }: SidebarProps) => {
+const Sidebar = ({ open }: SidebarProps) => {
   return (
-    <>
-      {/* Mobile backdrop */}
-      {open && (
-        <div
-          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-sm lg:hidden"
-          onClick={() => setOpen(false)}
-        />
-      )}
-      <aside className="w-[19rem] min-w-[15rem] h-full border-r border-gray-200 relative">
+  
+      <aside
+        className={`${open ? "w-[16rem]" : "w-0 overflow-hidden"} transition-all duration-300 ease-in-out h-full border-r border-gray-200 relative `}
+      >
         {/* Logo */}
         <div className="text-2xl font-medium border-b border-gray-200 px-4 py-2 pb-2 flex justify-start items-center ">
           ContentAI
         </div>
         {/* links */}
         <nav className="flex justify-center flex-col justify-center gap-2 mt-2 p-4">
-          <Link to="/dashboard" className="sidebar-link flex items-center gap-2" >
+          <Link
+            to="/dashboard"
+            className="sidebar-link flex items-center gap-2"
+          >
             <LayoutTemplate size={20} />
             Dashboard
           </Link>
-          <Link to="/generate-content" className="sidebar-link flex items-center gap-2" >
+          <Link
+            to="/generate-content"
+            className="sidebar-link flex items-center gap-2"
+          >
             <FileText size={20} />
             Generate
           </Link>
-          <Link to="/history" className="sidebar-link flex items-center gap-2" >
+          <Link to="/history" className="sidebar-link flex items-center gap-2">
             <History size={20} />
             History
           </Link>
-          <Link to="/settings" className="sidebar-link flex items-center gap-2" >
+          <Link to="/settings" className="sidebar-link flex items-center gap-2">
             <Settings size={20} />
             Settings
           </Link>
@@ -62,7 +62,6 @@ const Sidebar = ({ open, setOpen }: SidebarProps) => {
           </div>
         </div>
       </aside>
-    </>
   );
 };
 

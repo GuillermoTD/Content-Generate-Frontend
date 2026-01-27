@@ -1,24 +1,29 @@
 import { Flex, TextField, Box, IconButton, Theme } from '@radix-ui/themes';
 import { Search, Bell } from 'lucide-react';
-import "@radix-ui/themes/styles.css";
-
+import { Menu } from 'lucide-react';
+import { useSidebarStore } from '../store/useSidebarStore';
 const Header = () => {
+  const toggle = useSidebarStore((state: any) => state.toggle);
   return (
     <header className="w-full h-[3.05rem] border-b border-slate-200 bg-background/80 flex items-center px-6 sticky top-0 z-50">
       <Flex justify="between" align="center" width="100%">
         
         {/* Lado Izquierdo: Buscador Redondeado */}
-        <Box width="450px">
-          <TextField.Root 
-            placeholder="Buscar..." 
-            size="2" 
-            variant="surface"
-            radius="large"
-          >
-            <TextField.Slot>
-              <Search size={18} className="text-slate-400" />
-            </TextField.Slot>
-          </TextField.Root>
+        <Box width="450px" >
+          <div className='flex items-center w-full h-full gap-4'>
+            <Menu className='cursor-pointer'onClick={()=>{toggle();}}/>
+            <TextField.Root 
+              placeholder="Buscar..." 
+              size="2" 
+              variant="surface"
+              radius="large"
+            >
+              <TextField.Slot>
+                <Search size={18} className="text-slate-400" />
+              </TextField.Slot>
+            </TextField.Root>
+          </div>
+         
         </Box>
 
         {/* Lado Derecho: Icono de Campana con Indicador */}
