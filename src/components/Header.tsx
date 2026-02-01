@@ -5,7 +5,7 @@ import { useSidebarStore } from '../store/useSidebarStore';
 const Header = () => {
   const toggle = useSidebarStore((state: any) => state.toggle);
   return (
-    <header className="w-full h-[3.05rem] border-b border-slate-200 bg-background/80 flex items-center px-6 sticky top-0 z-50">
+    <header className="w-full h-[3.05rem] border-b border-slate-200 bg-white flex items-center px-6 sticky top-0 z-50">
       <Flex justify="between" align="center" width="100%">
         
         {/* Lado Izquierdo: Buscador Redondeado */}
