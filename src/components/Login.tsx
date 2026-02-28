@@ -10,7 +10,6 @@ import {
   HStack,
   Text,
   Heading,
-  Link,
   Separator,
   Field,
 } from "@chakra-ui/react";

@@ -1,7 +1,10 @@
-import { Flex, TextField, Box, IconButton, Theme } from '@radix-ui/themes';
+import { Flex, TextField, Box, IconButton } from '@radix-ui/themes';
 import { Search, Bell } from 'lucide-react';
 import { Menu } from 'lucide-react';
 import { useSidebarStore } from '../store/useSidebarStore';
+
+
+
 const Header = () => {
   const toggle = useSidebarStore((state: any) => state.toggle);
   return (

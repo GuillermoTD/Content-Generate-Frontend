@@ -1,11 +1,7 @@
 import {
-  Card,
   Text,
-  Heading,
-  Flex,
   Tabs,
   Box,
-  Section,
 } from "@radix-ui/themes";
 import { FileText, Video, ImageIcon } from "lucide-react";
 import Header from "../../components/Header";

@@ -8,7 +8,8 @@ import { ProgressBar } from "./pre-built-components/ProgressBar";
 import { Link } from "react-router";
 interface SidebarProps {
   open: Boolean;
- 
+  setOpen?: (open: boolean) => void;
+  toggleSidebar?: (open:boolean) => void;
 }
 
 // const routes = [

@@ -1,7 +1,7 @@
 import { BlogHistoryProps } from "../../../interfaces";
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+// import * as TabsPrimitive from "@radix-ui/react-tabs"
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
-import { FileText, Video, MoreVertical, Trash2, Eye, Edit, Copy, ImageIcon, Download } from "lucide-react"
+import { FileText, MoreVertical, Trash2, Eye, Edit, Copy} from "lucide-react"
 import { Box } from "@radix-ui/themes";
 
 const BlogHistory = (props: BlogHistoryProps) => {

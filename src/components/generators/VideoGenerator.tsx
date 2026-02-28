@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Box, Card, Flex, Select, Text, TextField } from "@radix-ui/themes";
-import { Button } from "@radix-ui/themes";
+// import { Button } from "@radix-ui/themes";
 import { Sparkles } from "lucide-react";
 // import { Label } from "@radix-ui/themes";
 // import { Input } from "@radix-ui/themes";
@@ -10,15 +10,15 @@ import { Sparkles } from "lucide-react";
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/themes";
 
 export function VideoGenerator() {
-  const [loading, setLoading] = useState(false);
-  const [topic, setTopic] = useState("");
-  const [generatedContent, setGeneratedContent] = useState({
-    title: "",
-    intro: "",
-    body: "",
-    conclusion: "",
-    meta: "",
-  });
+  // const [loading, setLoading] = useState(false);
+  // const [topic, setTopic] = useState("");
+  // const [generatedContent, setGeneratedContent] = useState({
+  //   title: "",
+  //   intro: "",
+  //   body: "",
+  //   conclusion: "",
+  //   meta: "",
+  // });
 
   const EmptyStateComponent = () => {
     return (

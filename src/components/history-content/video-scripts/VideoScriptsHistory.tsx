@@ -1,4 +1,4 @@
-import { FileText, Video, MoreVertical, Trash2, Eye, Edit, Copy, ImageIcon, Download } from "lucide-react"
+import { MoreVertical, Trash2, Eye, Edit, Copy } from "lucide-react"
 import { Box } from "@radix-ui/themes"
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
 import { VideoHistoryProps } from "../../../interfaces";

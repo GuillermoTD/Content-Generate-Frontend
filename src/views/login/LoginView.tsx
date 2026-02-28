@@ -6,7 +6,7 @@ export default function LoginView() {
   const [showPassword, setShowPassword] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [showRightDiv, setShowRightDiv] = useState(true);
+  // const [showRightDiv, setShowRightDiv] = useState(true);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,12 +18,12 @@ export default function LoginView() {
   const handleChange = () => {
     console.log("Scroll Y:", window.scrollY, "Altura:", window.innerHeight);
 
-    // Lógica de ocultar div
-    if (window.scrollY > 300) {
-      setShowRightDiv(false);
-    } else {
-      setShowRightDiv(true);
-    }
+    // // Lógica de ocultar div
+    // if (window.scrollY > 300) {
+    //   setShowRightDiv(false);
+    // } else {
+    //   setShowRightDiv(true);
+    // }
   };
 
   window.addEventListener("scroll", handleChange);
